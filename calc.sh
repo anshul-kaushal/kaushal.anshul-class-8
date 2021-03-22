@@ -18,6 +18,7 @@ echo "Press 3 for multiplication"
 echo "Press 4 for division"
 echo "Press 0 to exit the program"
 # Then, capture the user selection.
+read user_response
 # If the selection matches a supported operation, execute the operation.
 # If the selection does not match a support operation, display an error message.
 # When the operation is complete, redisplay the menu.
