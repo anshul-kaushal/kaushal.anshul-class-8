@@ -12,6 +12,11 @@ fi
   # Add
   # Subtract
   # Exit
+echo "Press 1 for add"
+echo "Press 2 for subtract"
+echo "Press 3 for multiplication"
+echo "Press 4 for division"
+echo "Press 0 to exit the program"
 # Then, capture the user selection.
 # If the selection matches a supported operation, execute the operation.
 # If the selection does not match a support operation, display an error message.
