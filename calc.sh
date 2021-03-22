@@ -1,6 +1,13 @@
 #! /usr/bin/env bash
 
 # When the program is first loaded, display a greeting to the user.
+echo "Welcome user! I'm calculator. Would you be kind enough to tell me your name?"
+read username
+if [[ -z $username ]]; then
+echo "Oh! It's fine if you don't want to provide your name."
+else
+echo "Welcome $username!"
+fi
 # Then, display a menu that outlines the possible operations:
   # Add
   # Subtract
