@@ -21,4 +21,33 @@ echo "Press 0 to exit the program"
 read user_response
 # If the selection matches a supported operation, execute the operation.
 # If the selection does not match a support operation, display an error message.
+echo "Please enter the first number, $username:"
+read first_number
+echo "and the second number:"
+read second_number
+echo "Thank you $username"
+case $user_response in 
+	"1")
+	echo "Your answer for $first_number + $second_number is:"
+	expr $first_number + $second_number
+	;;
+	"2")
+	echo "Your answer for $first_number -  $second_number is:"
+	expr $first_number - $second_number
+	;;
+	"3")
+	echo "Your answer for $first_number * $second_number is:"
+	expr $first_number "*" $second_number
+	;;
+	"4")
+	echo "Your answer for $first_number / $second_number is:"
+	expr $first_number / $second_number
+	;;
+	"0")
+	echo "Thank you for your time! Exiting program"
+	;; 	
+	*)
+	echo "Please choose the correct option"
+	;;
+esac
 # When the operation is complete, redisplay the menu.
